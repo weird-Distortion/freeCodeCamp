@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Survey page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="main">
+		<h1 id="title">
+			Survey Form
+		</h1>
+
+		<div id="form-div">
+			<p id="description">Let us know how we can improve FCC</p>
+
+			<form id="survey-form">
+
+				<div id="row">
+					<div id="leftrow">
+						<label id="name-label" for="name">
+							Name:
+						</label>
+					</div>
+					<div class="fields"><input id="name" class="inp" type="text" placeholder="Enter your name" required></div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label id="email-label" for="email">
+							Email:
+						</label>
+					</div>
+					<div class="fields"><input id="email" class="inp" type="email" placeholder="Enter your email" required></div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label id="number-label" for="age">
+							Age:
+						</label>
+					</div>
+					<div class="fields"><input id="number" class="inp" type="number" min="1" max="120" placeholder="Age" required></div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label for="dropdown">Who do you think tou are</label>
+					</div>
+					<div class="fields">
+						<select id="dropdown">
+							<option disabled>Select</option>
+							<option>Man</option>
+							<option>Woman</option>
+							<option>Notman</option>
+							<option>Notwoman</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label for="fieldset">Would you recommend FCC to a friend?</label>
+					</div>
+					<div class="fields">
+						<div id="fieldset">
+							<div><input type="radio" value="1" name="group1">Yes</div>
+							<div><input type="radio" value="2" name="group1">No</div>
+							<div><input type="radio" value="3" name="group1">Hell no!</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label for="fieldset">
+							<div>
+								Things that should be improved in the future
+							</div>
+							<div>
+								(Check all that apply):
+							</div>
+						</label>
+					</div>
+					<div class="fields">
+						<div id="fieldset">
+							<div><input type="checkbox" value="style" name="group1">Style</div>
+							<div><input type="checkbox" value="lang_pack" name="group1">Language pack</div>
+							<div><input type="checkbox" value="tasks" name="group1">Tasks</div>
+							<div><input type="checkbox" value="info" name="group1">Info</div>
+							<div><input type="checkbox" value="somthge" name="group1">Something else</div>
+							<div><input type="checkbox" value="somethingelse" name="group1">Something else!!!</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="row">
+					<div id="leftrow">
+						<label for="fieldset">Your comments. Whatever you are writing. We ain't gonna read it.</label>
+					</div>
+					<div class="fields">
+						<div id="fieldset">
+							<textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your comment here."></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div id="button">
+					<button id="submit" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
