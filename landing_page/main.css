@@ -5,11 +5,11 @@
 }
 
 body {
-	background-color: #0295FF;
+	background-color: #119792;
+	font-family: 'Lato', sans-serif;
 }
 
 header {
-	background-color: #1370B2;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -22,6 +22,9 @@ header {
 	height: 5%;
 	overflow: hidden;
 	margin: 0;
+	background: rgb(49,228,220);
+	background: radial-gradient(circle, rgba(49,228,220,1) 35%,
+		rgba(0,212,255,1) 100%);
 }
 
 #header-img {
@@ -29,7 +32,7 @@ header {
 	height: 4em;
 	max-width: 300px;
 	display: flex;
-	align-items: center;
+	align-items: middle;
 	text-align: center;
 	margin-left: 0px;
 }
@@ -40,16 +43,18 @@ a {
 
 .logo {
 	text-align: left;
+	margin-top: 0.5%;
 }
 
 .top-nav {
 	overflow: hidden;
-	top: 0;
+	margin: 5% 0 5% 0;
 }
 
 #nav-bar {
 	width: 35%;
 	font-size: 30px;
+	align-items: center;
 }
 
 ul {
@@ -58,7 +63,7 @@ ul {
 }
 
 .nav-link {
-	font-size: 1.5	vw;
+	font-size: 2vw;
 	padding: 0 1em 1em 0;
 }
 
@@ -74,7 +79,6 @@ ul {
 #email {
 	width: 400px;
 	height: 30px;
-
 }
 
 .btn {
@@ -90,3 +94,75 @@ ul {
 	font-weight: 900;
 	padding 0 20;
 }
+
+#features {
+	padding-top: 50px;
+	width: 55em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feature {
+	font-size: 35px;
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.grid {
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+
+}
+
+.icon-img{
+	width: 120px;
+	height: 120px;
+	box-shadow: 0 0 150px #B19514;
+	border-radius: 50%;
+}
+
+.desc {
+	padding-left: 7%;
+}
+
+.benefits-descr {
+	font-size: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+ol {
+	list-style-type: none;
+}
+
+#clip {
+	padding-top: 50px;
+}
+
+#price {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#bomj, #mid, #lux {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	margin: 10px;
+	width: calc(100% / 3);
+	text-align: center;
+	align-items: center;
+}
+
+.level {
+padding: 15px 0 15px 0;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+background-color: #31E4DC;
+}
+
+
