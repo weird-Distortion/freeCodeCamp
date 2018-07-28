@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+}
+:root {
+	--border-color: rgba(178,168,160,0.4);
+}
+
+#navbar {
+	position: fixed;
+	min-width: 290px;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 100%;
+	border-right: solid;
+	border-color: var(--border-color);
+}
+
+#navbar ul {
+	height: 88%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#navbar li {
+	color: var(--border-color);
+	border: 2px solid;
+	border-bottom-width: 0px;
+	padding: 10px;
+	padding-left: 45px;
+	list-style: none;
+	position: relative;
+	left: -50px;
+	width: 100%;
+}
+
+li a {
+	display: block;
+	width: 60px;
+}
+
+#main-div {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-doc {
+	position: absolute;
+	margin-left: 310px;
+	padding: 20px;
+	margin-bottom: 110px;
+}
+
+header {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+code {
+	display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #99B297;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
