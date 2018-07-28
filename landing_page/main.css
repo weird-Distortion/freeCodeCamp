@@ -4,9 +4,16 @@
 	}
 }
 
+:root {
+	--background-style-color: rgb(49,228,220);
+	--background-style-gradient: radial-gradient(circle, rgba(49,228,220,1) 35%,
+		rgba(0,212,255,1) 100%);
+}
+
 body {
 	background-color: #119792;
 	font-family: 'Lato', sans-serif;
+
 }
 
 header {
@@ -22,9 +29,7 @@ header {
 	height: 5%;
 	overflow: hidden;
 	margin: 0;
-	background: rgb(49,228,220);
-	background: radial-gradient(circle, rgba(49,228,220,1) 35%,
-		rgba(0,212,255,1) 100%);
+	background: var(--background-style-gradient);
 }
 
 #header-img {
@@ -44,6 +49,10 @@ a {
 .logo {
 	text-align: left;
 	margin-top: 0.5%;
+}
+
+iframe {
+	box-shadow: 0px 0px 10px black;
 }
 
 .top-nav {
@@ -79,12 +88,15 @@ ul {
 #email {
 	width: 400px;
 	height: 30px;
+	box-shadow: 0 0 10px black;
+	border: 0;
+	border-radius: 20px;
 }
 
 .btn {
 	border: 0;
 	background-color: blue;
-	margin-top: 10px;
+	margin: 10px 0;
 	width: 120px;
 	height: 30px;
 	font-size: 1em;
@@ -92,7 +104,7 @@ ul {
 	border-radius: 3px;
 	text-transform: uppercase;
 	font-weight: 900;
-	padding 0 20;
+	box-shadow: 0 0 10px black;
 }
 
 #features {
@@ -113,7 +125,6 @@ ul {
 	display: flex;
 	align-items: center;
 	padding-bottom: 40px;
-
 }
 
 .icon-img{
@@ -135,6 +146,14 @@ ul {
 
 ol {
 	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0 auto 0 auto;
+}
+
+li {
+	padding: 5px 0;
 }
 
 #clip {
@@ -145,6 +164,7 @@ ol {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-top: 50px;
 }
 
 #bomj, #mid, #lux {
@@ -155,14 +175,36 @@ ol {
 	width: calc(100% / 3);
 	text-align: center;
 	align-items: center;
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px black;
 }
 
 .level {
-padding: 15px 0 15px 0;
-width: 100%;
-text-transform: uppercase;
-font-weight: 700;
-background-color: #31E4DC;
+	padding: 15px 0 15px 0;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: var(--background-style-gradient);
+	border-radius: 20px 20px 0 0;
 }
 
+.footer-link {
+	color: black;
+}
+
+footer {
+	text-align: right;
+	font-size: 14px;
+	background: var(--background-style-gradient);
+	padding: 15px;
+	margin-top: 20px;
+	box-shadow: 0 0 3px black;
+	border-radius: 3px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+}
 
