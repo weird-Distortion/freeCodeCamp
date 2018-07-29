@@ -3,6 +3,11 @@
 		background-color: lightblue;
 	}
 }
+
+html{
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
 :root {
 	--border-color: rgba(178,168,160,0.4);
 }
@@ -16,12 +21,19 @@
 	height: 100%;
 	border-right: solid;
 	border-color: var(--border-color);
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
 
 #navbar ul {
 	height: 88%;
 	overflow-y: auto;
 	overflow-x: hidden;
+	font-size: 24px;
 }
 
 #navbar li {
@@ -36,9 +48,8 @@
 	width: 100%;
 }
 
-li a {
-	display: block;
-	width: 60px;
+#navbar header {
+	text-align: center;
 }
 
 #main-div {
@@ -60,14 +71,14 @@ header {
 
 code {
 	display: block;
-    text-align: left;
-    white-space: pre;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    background-color: #99B297;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
+	text-align: left;
+	white-space: pre;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	background-color: #99B297;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 10px;
 }
