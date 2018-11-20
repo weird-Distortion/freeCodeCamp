@@ -1,0 +1,38 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 600px;
+  margin: 1.8rem auto;
+  background-color: green;
+  border-radius: 5px;
+
+  .screen {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  h4 {
+    margin:0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  #preview, #editor {
+    height: 520px;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    overflow: scroll;
+  }
+
+}
+
+
